@@ -81,3 +81,10 @@ footer {
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
+.zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1); /* Puedes ajustar el valor para obtener el nivel de zoom deseado */
+}

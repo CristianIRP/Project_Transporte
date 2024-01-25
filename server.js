@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.post('/send-email', (req, res) => {
     const { nombre, email, mensaje } = req.body;
 
-    // Configura tu plantilla y usuario de Email.js
+
     const emailjsParams = {
         service_id: 'tu_service_id',
         template_id: 'tu_template_id',
@@ -23,7 +23,7 @@ app.post('/send-email', (req, res) => {
         }
     };
 
-    // Envía el correo electrónico
+
     emailjs.send(emailjsParams.service_id, emailjsParams.template_id, emailjsParams.template_params, emailjsParams.user_id)
         .then(function (response) {
             console.log('Correo electrónico enviado:', response);
