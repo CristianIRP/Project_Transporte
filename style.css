@@ -81,14 +81,6 @@ footer {
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
-.zoom-effect {
-    transition: transform 0.3s ease-in-out;
-}
-
-.zoom-effect:hover {
-    transform: scale(1.1); 
-}
-
 .social-icons {
     position: fixed;
     top: 20px;
@@ -112,10 +104,17 @@ footer {
 .card {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.5 ease, transform 0.5s ease;
+    transition: opacity 0.3 ease, transform 0.3s ease;
 
 }
 .card.appear {
     opacity: 1;
     transform: translateY(0) ;
+}
+.zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1); 
 }
